@@ -1,0 +1,43 @@
+# Environnement Python
+env/
+.venv/
+*.py[cod]
+__pycache__/
+*.so
+
+# Django
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+
+# Fichiers de config secrets
+.env
+.env.*
+
+# Fichiers de migration compilés
+**/__pycache__/
+**/*.pyc
+
+# Fichiers statiques générés
+/staticfiles/
+/static/
+/media/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+
+
+
+
+# Render / deployment
+*.tar.gz
+*.egg-info/
