@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",  
-    "https://courageous-cuchufli-f101c9.netlify.app"
+    "https://sparkly-stroopwafel-4b9859.netlify.app"
 ]
 
 
