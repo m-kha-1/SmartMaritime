@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-ucn*4#1nk*es8wq7lns+a!_)f@u_yb2-=tlg391myo=xn-lenq
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['smartmaritime.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
