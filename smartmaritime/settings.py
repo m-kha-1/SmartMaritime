@@ -105,7 +105,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",  # Angular par défaut
+    "http://localhost:4200",  
+    "https://courageous-cuchufli-f101c9.netlify.app"
 ]
 
 
