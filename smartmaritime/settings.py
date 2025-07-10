@@ -112,7 +112,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",  
-    "https://capable-flan-2113ce.netlify.app"
+    "transcendent-dango-0983ea.netlify.app"
 ]
 
 
