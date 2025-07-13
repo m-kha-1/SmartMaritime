@@ -52,8 +52,9 @@ class TrajetEstimate(APIView):
             c = 2 * atan2(sqrt(a), sqrt(1 - a))
             return R * c
 
-        dist_km = haversine(port_depart.latitude, port_depart.longitude, port_arrivee.latitude, port_arrivee.longitude)
-        vitesse_moyenne = 20
+        #dist_km = haversine(port_depart.latitude, port_depart.longitude, port_arrivee.latitude, port_arrivee.longitude)
+        dist_km = route.properties["length"]
+        vitesse_moyenne = 40
         duree_estimee = round(dist_km / vitesse_moyenne)
         emission_co2 = round(dist_km * 3)
 
@@ -67,6 +68,9 @@ class TrajetEstimate(APIView):
         path = [[lat, lon] for lon, lat in route.geometry["coordinates"]]
 
         trajet_data= {
+            "date_depart": date.today(),
+            "duree_estimee": duree_estimee,
+            "emission_co2": emission_co2,
             "length": route.properties["length"],
             "units": route.properties["units"],
             "path": path
