@@ -110,10 +110,12 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:4200",  
-    "https://transcendent-dango-0983ea.netlify.app"
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:4200",  
+#     "https://transcendent-dango-0983ea.netlify.app"
+# ]
+
+CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Internationalization
